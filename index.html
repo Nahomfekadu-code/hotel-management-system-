@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>go out from ethiopia hotel Management System</h1>
+    </header>
+    <main>
+        <section id="registration-form">
+            <h2>Register</h2>
+            <form id="register">
+                <label for="reg-username">Username:</label>
+                <input type="text" id="reg-username" required>
+                <label for="reg-password">Password:</label>
+                <input type="password" id="reg-password" name="name" required >
+                <button type="submit">Register</button>
+            </form>
+        </section>
+        <section id="login-form"  style="display: none;">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="username">Username:</label>
+                <input type="text" id="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="name" required id="ut">
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="booking-form"  style="display: none;">
+            <h2>Book a Room</h2>
+            <form id="form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" required>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+                <label for="check-in">Check-In Date:</label>
+                <input type="date" id="check-in" required>
+                <label for="check-out">Check-Out Date:</label>
+                <input type="date" id="check-out" required>
+                <button type="submit">Book</button>
+            </form>
+        </section>
+        <section id="available-rooms">
+            <h2>Available Rooms</h2>
+            <ul id="rooms-list"></ul>
+        </section>
+        <section id="booking-confirmation">
+            <h2>Booking Confirmation</h2>
+            <div id="confirmation-details"></div>
+        </section>
+        <section id="booking-history">
+            <h2>Booking History</h2>
+            <ul id="history-list"></ul>
+        </section>
+    </main>
+ <script src="script.js"></script>
+</body>
+</html>
